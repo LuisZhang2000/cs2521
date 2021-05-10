@@ -1,0 +1,34 @@
+HIGHER ORDER FUNCTIONS
+
+1. Function calls
+                                         
+map([1, 3, 5, 7, 9], square)            myList
+square(1)                               [1, 3, 5, 7, 9]
+map([3, 5, 7, 9], square)           
+square(3)                               [1, 9, 5, 7, 9]
+map([5, 7, 9], square)           
+square(5)                               [1, 9, 25, 7, 9]
+map([7, 9], square)           
+square(7)                               [1, 9, 25, 49, 9]
+map([9], square)           
+square(9)                               [1, 9, 25, 49, 81]
+map([], square)           
+
+2. fold([2, 3, 4], mult, 1)
+
+= mult(2, fold([3, 4], mult, 1))
+= mult(2, mult(3, fold([4], mult, 1)))
+= mult(2, mult(3, mult(4, fold([], mult, 1))))
+= mult(2, mult(3, mult(4, 1)))
+= mult(2, mult(3, 4))
+= mult(2, 12)
+= 24
+
+SORTING
+
+3. a) Stable sort, the name will be sorted along with the relative positions of items with the same sort keys
+e.g. MATH Adam will still be before PSYC ADAM, COMP John will still be before MATH John
+
+b) Non-stable sort can produce any random order although names will still be sorted correctly 
+
+4. 

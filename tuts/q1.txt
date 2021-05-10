@@ -1,0 +1,12 @@
+2. a) No, as long as there is only one statement after the for loop
+
+b) sscanf converts the second argument into an integer value and stores it in N
+
+c) use atoi function to convert to integer
+N = atoi(argv[0])
+
+d) assert(argc > 1): ensuring there is more than 1 command line argument
+
+assert(N > 0): checking if N is positive since it is being used to allocate the size of an array 
+
+assert(a != NULL): ensuring 

@@ -1,0 +1,5 @@
+#!/bin/sh
+temp=$(mktemp -d)
+cp BSTreeGetKth/BSTreeGetKth.c TreeCopy/TreeCopy.c TreeIsPerfectlyBalanced/TreeIsPerfectlyBalanced.c listSetDifference/listSetDifference.c "$temp"
+cd "$temp"
+give cs2521 lab04

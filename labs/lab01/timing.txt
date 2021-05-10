@@ -1,0 +1,30 @@
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dups	of runs	forusel	forsort
+
+5000	random	no	N	0.122s	0.004s
+5000	sorted	no	N	0.015s	0.004s
+5000	reverse	no	N	0.014s	0.004s
+
+5000	random	yes	3	0.130	0.006
+5000	sorted	yes	3	0.020	0.008
+5000	reverse	yes	3	0.022	0.007
+
+10000	random	no	N	0.479s	0.004s
+10000	sorted	no	N	0.028s	0.004s
+10000	reverse	no	N	0.028s	0.004s
+
+10000	random	yes	3	0.480	0.012
+10000	sorted	yes	3	0.028	0.009
+10000	reverse	yes	3	0.015	0.010
+
+
+Patterns:
+
+Average time for sort was always significantly shorter than average time for my own function (useIntList)
+this is because of the efficiency of the two methods, sort is more efficient than the code I have written
+
+If the values were originally sorted than it usually took less time to sort again
+
+Input with 10000 values generally took longer to sort than input with 5000 values (obviously)
+
+Duplicates and no duplicates were done on different computers so results may be inconsistent when comparing dups to non dups

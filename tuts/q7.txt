@@ -1,0 +1,25 @@
+1. 
+
+Set reachable (Graph g, Vertex v) {
+    Set seen = newSet(g->nV);
+    Queue todo = newQueue();
+    QueueJoin(todo, v);
+    SetInclude(seen, v);
+    while (QueueLength(todo) > 0) {
+        Vertex next = QueueLeave(todo);
+        // add unseen neighbours to "todo" queue
+        for (int i = 0; i < g->nV; i++) {
+            if (!g->edges[next][i]) {
+                continue;
+            }
+            if (!SetHasElem(seen, i)) {
+                QueueJoin(todo, i);
+                SetInclude(seen, i);
+            }
+        }
+    }
+    return seen;
+}
+
+
+
